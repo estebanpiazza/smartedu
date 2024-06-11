@@ -1,0 +1,254 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #50535C;
+    background-color: #E7E7E7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+header.sticky {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:#339e35;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #E7E7E7;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./WhatsApp\ Image\ 2024-06-11\ at\ 10.42.44\ AM.jpeg') no-repeat center center/cover;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.hero-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #FFFFFF;
+    background: #018f93;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero-buttons .btn:hover {
+    background: #016f73;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #339e35;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #50535C;
+}
+
+#features {
+    background-color: #F5F5F5;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1 1 22%;
+    text-align: center;
+    margin: 20px;
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+}
+
+.feature-title {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.feature-description {
+    font-size: 1em;
+    color: #707070;
+}
+
+#services {
+    background-color: #E7E7E7;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1 1 30%;
+    text-align: center;
+    margin: 20px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #339e35;
+}
+
+.service p {
+    font-size: 1.2em;
+    color: #50535C;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #50535C;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #339e35;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #2a7a2b;
+}
+
+footer {
+    background: #50535C;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #AAAAAA;
+}
+
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Remove padding to fit image size */
+    background-color: transparent; /* No background color */
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button img {
+    width: 100px; /* Adjust the width as necessary */
+    border-radius: 50%;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.05);
+}
+

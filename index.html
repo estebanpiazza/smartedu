@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartEdu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./SmartEDU_isotipo-02.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="SmartEDU_membrete-A4.png" alt="SmartEdu Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#features">Diferenciales</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>SmartEdu</h1>
+            <p>El lema de tu empresa aquí</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Contacto</a>
+                <a href="#services" class="btn">Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Diferenciales</h2>
+        <div class="features-container">
+            <div class="feature">
+                <img src="icon1.png" alt="Feature 1">
+                <p class="feature-title">Característica 1</p>
+                <p class="feature-description">Descripción de la característica 1.</p>
+            </div>
+            <div class="feature">
+                <img src="icon2.png" alt="Feature 2">
+                <p class="feature-title">Característica 2</p>
+                <p class="feature-description">Descripción de la característica 2.</p>
+            </div>
+            <div class="feature">
+                <img src="icon3.png" alt="Feature 3">
+                <p class="feature-title">Característica 3</p>
+                <p class="feature-description">Descripción de la característica 3.</p>
+            </div>
+            <div class="feature">
+                <img src="icon4.png" alt="Feature 4">
+                <p class="feature-title">Característica 4</p>
+                <p class="feature-description">Descripción de la característica 4.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Servicios</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Servicio 1</h3>
+                <p>Descripción del servicio 1.</p>
+            </div>
+            <div class="service">
+                <h3>Servicio 2</h3>
+                <p>Descripción del servicio 2.</p>
+            </div>
+            <div class="service">
+                <h3>Servicio 3</h3>
+                <p>Descripción del servicio 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SmartEdu. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+<!-- Botón de WhatsApp -->
+<a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+    <img src="./SmartEDU_isotipo-01.png" id="imagenbotonwhatsapp" alt="WhatsApp">
+</a>
+<script>
+        // Script para el header fijo
+        window.onscroll = function() {fixedHeader()};
+
+        var header = document.querySelector("header");
+        var sticky = header.offsetTop;
+
+        function fixedHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
