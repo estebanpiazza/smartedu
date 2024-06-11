@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -7,11 +8,12 @@ body {
     background-color: #E7E7E7;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
+    background: #339e35;
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -43,7 +45,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color:#339e35;
+    color: #FFFFFF;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -52,14 +54,16 @@ nav ul li a:hover {
     color: #E7E7E7;
 }
 
+/* Hero */
 #hero {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('./WhatsApp\ Image\ 2024-06-11\ at\ 10.42.44\ AM.jpeg') no-repeat center center/cover;
+    background: url('your-image-path.jpg') no-repeat center center/cover;
     color: #FFFFFF;
     text-align: center;
+    padding: 0 20px;
 }
 
 .hero-content {
@@ -91,24 +95,11 @@ nav ul li a:hover {
     background: #016f73;
 }
 
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #339e35;
-}
-
-section p {
-    font-size: 1.2em;
-    color: #50535C;
-}
-
+/* Sección Features */
 #features {
     background-color: #F5F5F5;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .features-container {
@@ -138,8 +129,11 @@ section p {
     color: #707070;
 }
 
+/* Sección Services */
 #services {
     background-color: #E7E7E7;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .services-container {
@@ -162,6 +156,12 @@ section p {
 .service p {
     font-size: 1.2em;
     color: #50535C;
+}
+
+/* Formulario de contacto */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
 }
 
 form {
@@ -200,6 +200,7 @@ form button:hover {
     background: #2a7a2b;
 }
 
+/* Footer */
 footer {
     background: #50535C;
     color: #FFFFFF;
@@ -226,7 +227,7 @@ footer p {
     color: #AAAAAA;
 }
 
-
+/* Botón de WhatsApp */
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
@@ -244,7 +245,8 @@ footer p {
 }
 
 .whatsapp-button img {
-    width: 100px; /* Adjust the width as necessary */
+    width: 50px; /* Adjust the width as necessary */
+    height: 50px; /* Adjust the height as necessary */
     border-radius: 50%;
 }
 
@@ -252,3 +254,52 @@ footer p {
     transform: scale(1.05);
 }
 
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .features-container, .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature, .service {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .feature img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .whatsapp-button img {
+        width: 40px;
+        height: 40px;
+    }
+}
