@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #339e35;
+    background: white;
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -48,10 +48,12 @@ nav ul li a {
     color: #FFFFFF;
     font-weight: bold;
     transition: color 0.3s;
+    color:#339e35
 }
 
 nav ul li a:hover {
     color: #E7E7E7;
+    color:#339e3554
 }
 
 /* Hero */
@@ -60,7 +62,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('your-image-path.jpg') no-repeat center center/cover;
+    background: url('./WhatsApp\ Image\ 2024-06-11\ at\ 10.42.44\ AM.jpeg') no-repeat center center/cover;
     color: #FFFFFF;
     text-align: center;
     padding: 0 20px;
@@ -117,6 +119,7 @@ nav ul li a:hover {
 .feature img {
     width: 80px;
     height: 80px;
+    filter: opacity(0.5) drop-shadow(0 0 0 #339e35);
 }
 
 .feature-title {
@@ -138,7 +141,7 @@ nav ul li a:hover {
 
 .services-container {
     display: flex;
-    justify-content: space-around;
+
     flex-wrap: wrap;
 }
 
@@ -303,3 +306,65 @@ footer p {
         height: 40px;
     }
 }
+.services-description {
+width: 50%;
+text-align: justify;
+}
+.services-description  img{
+    width: 50%;
+    margin: 20px;
+    }
+
+
+
+    #services h2 {
+        text-align: center;
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .services-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .services-description {
+        flex: 1;
+        text-align: justify;
+        color: #555;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+    
+    .services-image {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .services-image img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    @media (max-width: 768px) {
+        .services-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .services-description,
+        .services-image {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .services-description {
+            margin-bottom: 20px;
+        }
+    }
+    
